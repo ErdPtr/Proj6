@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="hu">
 <head>
     <meta charset="UTF-8">
@@ -20,6 +20,7 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             background-color:white;
             height:400px;
+            text-align: center; /* Center content inside */
         }
 
         h1 {
@@ -66,12 +67,12 @@
             border-radius: 4px;
             background-color: #f9f9f9;
         }
-        .pelda{
-            background-color:white;
-            width:600px;
-            border-color:black;
-            border:solid;
-            margin-left:625px;
+
+        .pelda {
+            display: block;
+            margin: 20px auto;
+            max-width: 100%; /* Ensure it fits inside the container */
+            height: auto; /* Maintain aspect ratio */
         }
     </style>
 </head>
@@ -98,6 +99,8 @@
         <button onclick="solveQuadratic()">Megoldás</button>
 
         <div id="result" class="result"></div>
+
+        <img src="kép/Masodfoku-egyenlet-429.jpg" class="pelda" />
     </div>
 
     <script>
@@ -134,6 +137,6 @@
             }
         }
     </script>
-    <img src="kép/Masodfoku-egyenlet-429.jpg" class="pelda" />
+
 </body>
 </html>
